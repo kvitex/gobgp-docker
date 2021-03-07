@@ -12,5 +12,5 @@ vim gobgp/gobgp.conf
 
 Then run container with GoBGP directory mounted as /etc/gobgp
 ```
-docker run  -v `pwd`/gobgp:/etc/gobgp:rw -p 179:179 kvitex/gobgp
+docker run  -d -v `pwd`/gobgp:/etc/gobgp:rw -p 179:179 kvitex/gobgp
 ```
